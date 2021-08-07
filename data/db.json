@@ -9,11 +9,6 @@
       "name": "React Router",
       "description": "React Router is a collection of navigational components that compose declaratively with your application.",
       "id": 2
-    },
-    {
-      "name": "Doggos",
-      "description": "Learn them",
-      "id": 3
     }
   ],
   "cards": [
@@ -36,7 +31,7 @@
       "deckId": 1
     },
     {
-      "front": "What path will match the following Route?\n<Route>\n  <NotFound />\n</Route>",
+      "front": "What path will match the follow Route?\n<Route>\n  <NotFound />\n</Route>",
       "back": "All paths. A route with no path matches all URL's",
       "deckId": 2,
       "id": 4
@@ -48,40 +43,17 @@
       "id": 5
     },
     {
-      "front": "BBB",
-      "back": "BBBB",
-      "deckId": "1",
+      "cards": [],
+      "front": "b",
+      "back": "b",
+      "deckId": 1,
       "id": 7
     },
     {
-      "front": "What it be",
-      "back": "What it do",
-      "deckId": "1",
-      "id": 8
-    },
-    {
-      "front": "Squecky",
-      "back": "She's a heckin squeck",
-      "deckId": 3,
-      "id": 9
-    },
-    {
-      "front": "Crashie",
-      "back": "Big heckin floofer",
-      "deckId": 3,
-      "id": 10
-    },
-    {
-      "front": "Smeeg",
-      "back": "Smeeeeeeeeg",
-      "deckId": 3,
-      "id": 11
-    },
-    {
-      "front": "New card?",
-      "back": "New card.",
+      "front": "study time",
+      "back": "BAYBEE",
       "deckId": 2,
-      "id": 12
+      "id": 8
     }
   ]
 }

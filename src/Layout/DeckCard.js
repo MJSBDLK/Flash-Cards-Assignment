@@ -36,12 +36,18 @@ export default function DeckCard({ deckId }) {
   return (
     <div className="card">
       <div className="card-body">
-        <h5 className="card-title">{`${deck.name}`}</h5>
-        <h6 className="card-subtitle mb-2 text-muted">{`${numCards} cards`}</h6>
+        <div className="d-flex justify-content-between">
+          <h5 className="card-title">{`${deck.name}`}</h5>
+          <h6 className="card-subtitle mb-2 text-muted">{`${numCards} cards`}</h6>
+        </div>
         <p className="card-text">{deck.description}</p>
-        <ViewButton deckId={deckId} />
-        <StudyButton deckId={deckId} />
-        <DeleteButton type={'deck'} id={deckId} />
+        <div className="d-flex justify-content-between">
+          <div>
+            <ViewButton deckId={deckId} />
+            <StudyButton deckId={deckId} />
+          </div>
+          <DeleteButton type={"deck"} id={deckId} />
+        </div>
       </div>
     </div>
   );
