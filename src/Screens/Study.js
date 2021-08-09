@@ -3,6 +3,8 @@ import { useHistory, useParams } from "react-router-dom";
 import { listCards, readDeck } from "../utils/api";
 import { Link } from "react-router-dom";
 import AddCardsButton from "../Layout/Buttons/AddCardsButton";
+import React from "react";
+
 
 export default function Study() {
   const { deckId } = useParams(); // console.log(`DeckId: `, deckId)
@@ -58,7 +60,7 @@ export default function Study() {
   // console.log(`cards[cardNumber]: `, cards[cardNumber]);
 
   return (
-    <>
+    <div>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -112,6 +114,6 @@ export default function Study() {
           <AddCardsButton deckId={deckId} />
         </div>
       )}
-    </>
+    </div>
   );
 }

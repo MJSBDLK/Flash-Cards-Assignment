@@ -1,5 +1,7 @@
 import { deleteCard, deleteDeck } from "../../utils/api/index";
 import { useHistory } from "react-router";
+import React from "react";
+
 
 export default function DeleteButton({ type, id }) {
   const history = useHistory();

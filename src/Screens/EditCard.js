@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link, useHistory } from 'react-router-dom';
 import { readDeck, readCard, updateCard } from '../utils/api';
+import React from "react";
+
 
 export default function EditCard() {
   const { deckId, cardId } = useParams(); console.log(`EditCard.js - deckId: ${deckId}; cardId: ${cardId}`)
@@ -51,7 +53,7 @@ export default function EditCard() {
   }
 
   return (
-    <>
+    <div>
       <nav aria-label='breadcrumb'>
         <ol className='breadcrumb'>
           <li className='breadcrumb-item'>
@@ -93,6 +95,6 @@ export default function EditCard() {
           Submit
         </button>
       </form>
-    </>
+    </div>
   );
 }

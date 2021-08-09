@@ -2,6 +2,7 @@ import EditButton from "./Buttons/EditButton";
 import { useState, useEffect } from "react";
 import { readCard } from "../utils/api";
 import DeleteButton from "./Buttons/DeleteButton";
+import React from "react";
 
 export default function CardCard({ cardId }) {
   const [card, setCard] = useState({});

@@ -7,6 +7,8 @@ import StudyButton from "../Layout/Buttons/StudyButton";
 import AddCardsButton from "../Layout/Buttons/AddCardsButton";
 import DeleteButton from "../Layout/Buttons/DeleteButton";
 import CardList from "../Layout/CardList";
+import React from "react";
+
 
 export default function Deck() {
   const [deck, setDeck] = useState({});
@@ -33,7 +35,7 @@ export default function Deck() {
   // console.log(`Deck.js - deck: `, deck)
 
   return (
-    <>
+    <div>
       <div className="mb-3">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb">
@@ -60,6 +62,6 @@ export default function Deck() {
       </div>
       <h3>Cards</h3>
       <CardList type={`card`} deckId={deckId} />
-    </>
+    </div>
   );
 }

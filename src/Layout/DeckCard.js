@@ -1,3 +1,4 @@
+import React from "react";
 import ViewButton from "./Buttons/ViewButton";
 import StudyButton from "./Buttons/StudyButton";
 import DeleteButton from "./Buttons/DeleteButton";

@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import { readDeck, readCard, listCards } from "../utils/api";
 import AddCardsButton from "../Layout/Buttons/AddCardsButton";
+import React from "react";
+
 
 export default function Study() {
   // The path to this screen should include the deckId (i.e., /decks/:deckId/study).
@@ -87,7 +89,7 @@ export default function Study() {
   };
 
   return (
-    <>
+    <div>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -132,6 +134,6 @@ export default function Study() {
           <AddCardsButton deckId={deckId} />
         </div>
       )}
-    </>
+    </div>
   );
 }

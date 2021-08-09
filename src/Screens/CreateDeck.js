@@ -1,6 +1,8 @@
 import { Link, useHistory } from "react-router-dom";
 import { useState } from "react";
 import { createDeck } from "../utils/api";
+import React from "react";
+
 
 export default function CreateDeck() {
 
@@ -32,7 +34,7 @@ export default function CreateDeck() {
   };
 
   return (
-    <>
+    <div>
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
@@ -72,6 +74,6 @@ export default function CreateDeck() {
           Submit
         </button>
       </form>
-    </>
+    </div>
   );
 }

@@ -2,6 +2,7 @@ import { readDeck, createCard } from "../utils/api";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
+import React from "react";
 
 export default function AddCard() {
   const [deck, setDeck] = useState({});
@@ -45,7 +46,7 @@ export default function AddCard() {
   }
 
   return (
-    <>
+    <div>
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
@@ -88,6 +89,6 @@ export default function AddCard() {
           Submit
         </button>
       </form>
-    </>
+    </div>
   );
 }
